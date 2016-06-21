@@ -21,7 +21,12 @@
         <vaadin.version>7.6.6</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
-    
+    <repositories>
+        <repository>
+            <id>vaadin-addons</id>
+            <url>http://maven.vaadin.com/vaadin-addons</url>
+        </repository>
+    </repositories>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -51,7 +56,7 @@
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
         </dependency>
- 
+        
         <!-- testing -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -123,6 +128,13 @@
             <artifactId>vaadin-client-compiled</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.vaadin.addons</groupId>
+            <artifactId>wizards-for-vaadin</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+		
+		
+        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>common</artifactId>
             <version>${project.version}</version>
@@ -181,8 +193,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>           
-            
+            </plugin>                     
         </plugins>
     </build>
 

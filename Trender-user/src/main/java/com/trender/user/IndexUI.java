@@ -27,9 +27,8 @@ public class IndexUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-
         Navigator navigator = new Navigator(this, this);
         navigator.addProvider(viewProvider);
-        navigator.navigateTo(IndexPageView.INDEX_PAGE_VIEW);
+        navigator.navigateTo("addEditStudy");
     }
 }

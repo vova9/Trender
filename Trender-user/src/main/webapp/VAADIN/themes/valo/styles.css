@@ -1,3 +1,8 @@
+/** custom styles*/
+
+@import "customStyles.css";
+
+
 /**
  * Checks if a list contains a certain value.
  * 
